@@ -60,7 +60,7 @@ char ch1='a'+1;//java会报错，因为这属于是用范围更小的类型接�
 
 - 在表达式中，byte、short、char 是直接转换成int类型参与运算的。（避免了运算后越界的问题）
 
-  ![image-20220304173324453](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220304173324453.png)
+  ![image-20220304173324453](JAVA笔记图片/image-20220304173324453.png)
 
 ### 强制类型转换
 
@@ -117,7 +117,7 @@ int c = a>b? a:b;
 
 ### 运算符的优先级
 
-![image-20220304195714082](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220304195714082.png)
+![image-20220304195714082](JAVA笔记图片/image-20220304195714082-16521102766041.png)
 
 
 
@@ -152,13 +152,13 @@ int arr[]=new int[3];
 
 数组中的未赋值的内存有默认值，局部变量则没有默认值
 
-![image-20220306153409864](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220306153409864.png)
+![image-20220306153409864](JAVA笔记图片/image-20220306153409864.png)
 
 ## 方法
 
 Java中的方法和C语言中的函数很类似，格式有些不同，且Java方法参数不支持默认值
 
-![image-20220306165509096](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220306165509096.png)
+![image-20220306165509096](JAVA笔记图片/image-20220306165509096.png)
 
 - 方法没有被调用的时候，在**方法区**中的字节码文件中存放
 
@@ -170,7 +170,7 @@ Java中的方法和C语言中的函数很类似，格式有些不同，且Java�
 
 - java中方法参数分为**基本参数类型和引用参数类型**，除了基本参数类型其他全是引用参数类型，引用的意义可参考c++
 
-![img](https://img-blog.csdn.net/20180607221353561)
+![img](JAVA笔记图片/20180607221353561.png)
 
 
 
@@ -188,9 +188,9 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 
 - 一个Java文件中可以定义多个class类，但只能一个类是public修饰，而且public修饰的类名必须成为代码文件名（按alt+enter可以快捷修改文件名为public类名）。实际开发中建议还是一个文件定义一个class类。
 
-  ![image-20220306205443372](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220306205443372.png)
+  ![image-20220306205443372](JAVA笔记图片/image-20220306205443372.png)
 
-![image-20220306205527457](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220306205527457.png)
+![image-20220306205527457](JAVA笔记图片/image-20220306205527457.png)
 
 
 
@@ -204,13 +204,13 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 
   
 
-![image-20220306212625585](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220306212625585.png)
+![image-20220306212625585](JAVA笔记图片/image-20220306212625585.png)
 
 ### 成员变量与局部变量的区别
 
 成员变量有**初始值**而局部变量没有
 
-![image-20220307195113402](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220307195113402.png)
+![image-20220307195113402](JAVA笔记图片/image-20220307195113402.png)
 
 
 
@@ -226,14 +226,14 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 
   ### string创建对象
 
-![image-20220307205426272](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220307205426272.png)
+![image-20220307205426272](JAVA笔记图片/image-20220307205426272.png)
 
 - 以“”方式给出的字符串对象，在**字符串常量池**中存储，而且相同内容只会在其中存储一份。
 - 通过构造器new对象，每new一次都会产生一个新对象，放在堆内存中。（**只要不是通过“”给出的字符串就会放到堆内存中**）
 
 可以直接把数组里的内容拼接为字符串输出
 
-![image-20220307210825974](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220307210825974.png)
+![image-20220307210825974](JAVA笔记图片/image-20220307210825974.png)
 
 ### string常用API
 
@@ -242,9 +242,9 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 - JAVA中只有基本数据类型可用“==”号判断内容是否相同；String等引用类型的变量不能使用“==”直接判断是否相等，因为引用类型的值在栈区存储的是指针，用“==”将会比较这两个**地址**是否相等
 - JAVA中无法用**[]**去访问字符串中某个位置的字符，要用特定的api。数组中仍然可用[]
 
-![image-20220307213213524](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220307213213524.png)
+![image-20220307213213524](JAVA笔记图片/image-20220307213213524.png)
 
-![image-20220310160853751](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220310160853751.png)
+![image-20220310160853751](JAVA笔记图片/image-20220310160853751.png)
 
 
 
@@ -256,7 +256,7 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 
 *用System.Out.Println(某集合)，会打印该集合所有的元素值；虽然集合的名称对应的也是栈区的一个指针，但集合内部会实现找到对应数据的功能。
 
-![image-20220310165712263](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220310165712263.png)
+![image-20220310165712263](JAVA笔记图片/image-20220310165712263.png)
 
 ### ArrayLIst泛型(统一集合中的元素类型)
 
@@ -266,7 +266,7 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 
   ### 常用API
 
-  ![image-20220310171631592](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220310171631592.png)
+  ![image-20220310171631592](JAVA笔记图片/image-20220310171631592.png)
 
 
 
@@ -283,7 +283,7 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 
 - **static修饰的成员变量**在内存中是被单独存放的，所有类对象**共享**，是属于类的
 
-![image-20220311222801635](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311222801635.png)
+![image-20220311222801635](JAVA笔记图片/image-20220311222801635.png)
 
 ### **static修饰的成员方法**
 
@@ -292,7 +292,7 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 访问格式： **类名.静态成员方法**
                     对象.静态成员方法（不推荐）
 
-![image-20220311223459616](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311223459616.png)
+![image-20220311223459616](JAVA笔记图片/image-20220311223459616.png)
 
 由于static修饰的成员方法是所有对象共享的，且可以直接通过类访问，所以适合用来写一些通用的方法，比如定义一个**工具类方法**来生成验证码。
 
@@ -317,7 +317,7 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 - 代码块是类的5大成分之一（成员变量、构造器，方法，**代码块**，内部类），定义在类中方法外。
 - 在Java类下，使用 { } 括起来的代码被称为代码块 。
 
-![image-20220311224843841](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311224843841.png)
+![image-20220311224843841](JAVA笔记图片/image-20220311224843841.png)
 
 
 
@@ -329,13 +329,13 @@ Java中的类和c++中的类很相似，区别在于Java没有指针，Java的th
 
 **在要用前就创建好了对象**
 
-![image-20220311225337164](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311225337164.png)
+![image-20220311225337164](JAVA笔记图片/image-20220311225337164.png)
 
 #### 懒汉单例模式：
 
 **提供一个静态方法，通过该方法得到一个对象**
 
-![image-20220311225602506](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311225602506.png)
+![image-20220311225602506](JAVA笔记图片/image-20220311225602506.png)
 
 
 
@@ -354,7 +354,7 @@ Java中提供一个**关键字extends**，用这个关键字，我们可以让�
 
 **父类与子类在内存上的关系：**我的理解是**子类将父类所有内容都包括在自己的空间中了**，但由于权限，父类的私有内容无法访问，且父类中的static修饰的内容依然是公用的，独立的。
 
-![image-20220311230046460](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311230046460.png)
+![image-20220311230046460](JAVA笔记图片/image-20220311230046460-16521103494243.png)
 
 
 
@@ -371,7 +371,7 @@ Java中提供一个**关键字extends**，用这个关键字，我们可以让�
 
 **继承后访问成员有就近原则，如果强行要访问父类成员，可使用super**
 
-![image-20220311231747778](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311231747778.png)
+![image-20220311231747778](JAVA笔记图片/image-20220311231747778.png)
 
 
 
@@ -384,7 +384,7 @@ Java中提供一个**关键字extends**，用这个关键字，我们可以让�
 - 重载： 发生在同一个类中，方法名必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同，发生在编译时。
 -  重写： 发生在父子类中，方法名、参数列表必须相同，返回值范围小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类；如果父类方法访问修饰符为private则子类就不能重写该方法。
 
-![image-20220311232036543](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311232036543.png)
+![image-20220311232036543](JAVA笔记图片/image-20220311232036543.png)
 
 
 
@@ -405,7 +405,7 @@ Java中提供一个**关键字extends**，用这个关键字，我们可以让�
 
 当子类没有定义方法时，this对象会寻找父类中的方法
 
-![image-20220311232710693](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220311232710693.png)
+![image-20220311232710693](JAVA笔记图片/image-20220311232710693.png)
 
 #### this调用本类其他构造器
 
@@ -448,13 +448,13 @@ public class Student {
 
   格式是：**包名.类名  对象名=new 包名.类名();**
 
-![image-20220312170711067](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220312170711067.png)
+![image-20220312170711067](JAVA笔记图片/image-20220312170711067.png)
 
 
 
 ## 权限修饰符
 
-![image-20220312171732758](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220312171732758.png)
+![image-20220312171732758](JAVA笔记图片/image-20220312171732758.png)
 
 
 
@@ -474,7 +474,7 @@ public class Student {
 - final修饰的变量是基本类型：那么变量存储的数据值不能发生改变。
 - final修饰的变量是引用类型：那么变量存储的地址值不能发生改变，但是地址指向的对象内容是可以发生变化的。
 
-![image-20220312200931402](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220312200931402.png)
+![image-20220312200931402](JAVA笔记图片/image-20220312200931402.png)
 
 
 
@@ -494,7 +494,7 @@ public class Student {
 
 Java中的枚举和C语言中的不一样，**Java中的枚举不可以给枚举对象赋初值，枚举的作用就只是作信息的标志和分类**，通常配合switch语句使用。
 
-<img src="C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220312205901297.png" alt="image-20220312205901297"  />
+<img src="JAVA笔记图片/image-20220312205901297.png" alt="image-20220312205901297"  />
 
 枚举在switch 语句中的使用和在其他地方的使用格式不同，这里并没有细讲，用到了再说。
 
@@ -534,7 +534,7 @@ public abstract class Animal{
 
 
 
-![image-20220312213851160](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220312213851160.png)
+![image-20220312213851160](JAVA笔记图片/image-20220312213851160.png)
 
 ### 模板方法模式
 
@@ -654,11 +654,11 @@ JDK8版本开始后，Java只对接口的成员方法进行了新增，**允许�
 
 
 
-![image-20220314150833884](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220314150833884.png)
+![image-20220314150833884](JAVA笔记图片/image-20220314150833884.png)
 
 
 
-![image-20220314150941040](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220314150941040.png)
+![image-20220314150941040](JAVA笔记图片/image-20220314150941040.png)
 
 
 
@@ -778,7 +778,7 @@ test(a);
 
 **匿名内部类常用于comparator()接口的快速实现**，注意在比较浮点型数值大小时要用Double.compare(),因为函数的返回值是int类型
 
-![image-20220322111423168](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220322111423168.png)
+![image-20220322111423168](JAVA笔记图片/image-20220322111423168.png)
 
 
 
@@ -794,7 +794,7 @@ test(a);
 - 一个类要么默认继承了Object类，要么间接继承了Object类，Object类是Java中的祖宗类。
 - **Object类可以接收所有引用类型**，要使用子类的特有功能时再强制类型转化为子类即可
 
-![image-20220315091809226](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315091809226.png)
+![image-20220315091809226](JAVA笔记图片/image-20220315091809226.png)
 
 - 父类toString()方法存在的意义就是**为了被子类重写**，以便返回对象的内容信息，而不是地址信息！！
 
@@ -807,7 +807,7 @@ test(a);
 
 Objects是一个工具类，提供了一些方法去完成一些功能。调用时直接 **Objects.方法名** ；因为Objects定义的方法都是静态方法，用类名直接调用，且其构造函数是私有的，不能创建对象。
 
-![image-20220315092629326](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315092629326.png)
+![image-20220315092629326](JAVA笔记图片/image-20220315092629326.png)
 
 官方在进行字符串比较时，没有用字符串对象的的equals方法，而是选择了Objects的equals方法来比较。使用Objects的equals方法在进行对象的比较会更安全。
 
@@ -825,15 +825,15 @@ public static boolean equals(Object a, Object b) {
 - StringBuilder是一个可变的字符串类，我们可以把它看成是一个对象容器。
 - 作用：提高字符串的操作效率，如拼接、修改等。
 
-![image-20220315093558343](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315093558343.png)
+![image-20220315093558343](JAVA笔记图片/image-20220315093558343.png)
 
-![image-20220315093629062](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315093629062.png)
+![image-20220315093629062](JAVA笔记图片/image-20220315093629062.png)
 
-![image-20220315093706650](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315093706650.png)
+![image-20220315093706650](JAVA笔记图片/image-20220315093706650.png)
 
 String是不可变字符串类型，意思是为String在栈区开辟的空间里存的内容：实体在堆区的地址是不可变的；每次拼接其实在底层还是调用了StringBulider，每次拼接都要换一次地址（在栈区重新开辟），所以效率低。
 
-![image-20220315094509887](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315094509887.png)
+![image-20220315094509887](JAVA笔记图片/image-20220315094509887.png)
 
 - String ：内容是不可变的、拼接字符串性能差。
 - StringBuilder：内容是可变的、拼接字符串性能好、代码优雅。
@@ -847,7 +847,7 @@ String是不可变字符串类型，意思是为String在栈区开辟的空间�
 - 包含执行基本数字运算的方法，Math类没有提供公开的构造器。
 - 如何使用类中的成员呢？看类的成员是否都是静态的，如果是，通过类名就可以直接调用
 
-![image-20220315094658565](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315094658565.png)
+![image-20220315094658565](JAVA笔记图片/image-20220315094658565.png)
 
 
 
@@ -855,7 +855,7 @@ String是不可变字符串类型，意思是为String在栈区开辟的空间�
 
 - System也是一个工具类，代表了当前系统，提供了一些与系统相关的方法。
 
-![image-20220315094748093](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315094748093.png)
+![image-20220315094748093](JAVA笔记图片/image-20220315094748093.png)
 
 
 
@@ -871,7 +871,7 @@ public static BigDecimal valueOf(double val):   包装浮点数成为BigDecimal�
 BigDecimal b1 = BigDecimal.valueOf(0.1);
 ```
 
-![image-20220315094926134](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220315094926134.png)
+![image-20220315094926134](JAVA笔记图片/image-20220315094926134.png)
 
 
 
@@ -881,9 +881,9 @@ BigDecimal b1 = BigDecimal.valueOf(0.1);
 
 **Date类代表当前所在系统的日期时间信息。**
 
-![image-20220316143639166](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220316143639166.png)
+![image-20220316143639166](JAVA笔记图片/image-20220316143639166.png)
 
-![image-20220316143737720](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220316143737720.png)
+![image-20220316143737720](JAVA笔记图片/image-20220316143737720.png)
 
 ***Date类还有 before()和after()方法用来判断时间的先后顺序。**
 
@@ -893,7 +893,7 @@ BigDecimal b1 = BigDecimal.valueOf(0.1);
 
 **可以去完成日期时间的格式化操作**
 
-![image-20220316144125807](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220316144125807.png)![image-20220316144857898](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220316144857898.png)
+![image-20220316144125807](JAVA笔记图片/image-20220316144125807.png)![image-20220316144857898](JAVA笔记图片/image-20220316144857898.png)
 
 ```java
 //指定格式的例子
@@ -910,13 +910,13 @@ Date d1=s.parse(t);//d1就是将字符串解析后的Date对象
 - Calendar代表了系统此刻日期对应的日历对象。
 - Calendar是一个抽象类，**不能直接创建对象**。（Calendar创建对象的方式与之前讲的**单例模式**是一样的）
 
-![image-20220316152331118](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220316152331118.png)
+![image-20220316152331118](JAVA笔记图片/image-20220316152331118.png)
 
 ```java
 Calendar c=Calendar.getInstance();
 ```
 
-![image-20220316152406651](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220316152406651.png)
+![image-20220316152406651](JAVA笔记图片/image-20220316152406651.png)
 
 ```java
 什么是字段？
@@ -986,21 +986,21 @@ ChronoUnit类可用于在单个时间单位内测量一段时间，这个工具�
 - java为了实现一切皆对象，为8种基本类型提供了对应的引用类型。
 - 后面的集合和泛型其实也只能支持包装类型，不支持基本数据类型。
 
-![image-20220318142006685](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318142006685.png)
+![image-20220318142006685](JAVA笔记图片/image-20220318142006685.png)
 
 **自动装箱：**基本类型的数据和变量可以直接赋值给包装类型的变量。
 
 **自动拆箱：**包装类型的变量可以直接赋值给基本数据类型的变量。
 
-![image-20220318142323026](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318142323026.png)
+![image-20220318142323026](JAVA笔记图片/image-20220318142323026.png)
 
 
 
 ## 正则表达式
 
-![image-20220318142505969](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318142505969.png)
+![image-20220318142505969](JAVA笔记图片/image-20220318142505969.png)
 
-![image-20220318142607255](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318142607255.png)
+![image-20220318142607255](JAVA笔记图片/image-20220318142607255.png)
 
 
 
@@ -1033,9 +1033,9 @@ String rs = "来黑马程序学习Java,电话020-43422424，或者联系邮箱" 
 
 数组操作工具类，专门用于操作数组元素的。
 
-![image-20220318143955053](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318143955053.png)
+![image-20220318143955053](JAVA笔记图片/image-20220318143955053.png)
 
-![image-20220318144321644](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318144321644.png)
+![image-20220318144321644](JAVA笔记图片/image-20220318144321644.png)
 
 
 
@@ -1045,11 +1045,11 @@ String rs = "来黑马程序学习Java,电话020-43422424，或者联系邮箱" 
 - **作用：简化匿名内部类的代码写法。**
 - 必须是接口的匿名内部类，接口中**只能有一个**抽象方法	
 
-![image-20220318144726046](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318144726046.png)
+![image-20220318144726046](JAVA笔记图片/image-20220318144726046.png)
 
 
 
-![image-20220318144937807](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318144937807.png)
+![image-20220318144937807](JAVA笔记图片/image-20220318144937807.png)
 
 
 
@@ -1057,7 +1057,7 @@ String rs = "来黑马程序学习Java,电话020-43422424，或者联系邮箱" 
 
 接口不能创建对象，必须要有一个类先实现接口，再由这个类创建对象，但这样写太麻烦了，于是就用到了匿名内部类。
 
-![image-20220318150354814](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220318150354814.png)
+![image-20220318150354814](JAVA笔记图片/image-20220318150354814.png)
 
 Comparator接口有两个抽象方法，一个是compare，另一个是equals方法；这与函数式接口定义有冲突，因为在调用用lambda表达式调用Comparator接口中都是实现了compare方法，并没有实现equals，而equals是Object中的方法，所用的类都继承Object类，所以equals继承了Object中是实现，所以函数式接口(Functional Interface)就是一个有且仅有一个(除和Object中方法有相同签名的外)抽象方法，但是可以有多个非抽象方法的接口。
 
@@ -1083,7 +1083,7 @@ Comparator接口有两个抽象方法，一个是compare，另一个是equals方
 - 数组适合做数据个数和类型确定的场景。
 - 集合适合做数据个数不确定，且要做增删元素的场景。
 
-![image-20220320150202779](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220320150202779.png)
+![image-20220320150202779](JAVA笔记图片/image-20220320150202779.png)
 
 
 
@@ -1099,25 +1099,25 @@ Comparator接口有两个抽象方法，一个是compare，另一个是equals方
 
 ### 泛型类
 
-![image-20220321173953369](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321173953369.png)
+![image-20220321173953369](JAVA笔记图片/image-20220321173953369.png)
 
 
 
 ### 泛型方法
 
-![image-20220321174104727](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321174104727.png)
+![image-20220321174104727](JAVA笔记图片/image-20220321174104727.png)
 
 
 
 ### 泛型接口
 
-![image-20220321174135179](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321174135179.png)
+![image-20220321174135179](JAVA笔记图片/image-20220321174135179.png)
 
 
 
 ### 泛型通配符、上下限
 
-![image-20220321174243429](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321174243429.png)
+![image-20220321174243429](JAVA笔记图片/image-20220321174243429.png)
 
 ![image-20220321174259356](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321174259356.png)
 
@@ -1131,7 +1131,7 @@ Comparator接口有两个抽象方法，一个是compare，另一个是equals方
 
 ## Collection集合
 
-![image-20220320150254339](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220320150254339.png)
+![image-20220320150254339](JAVA笔记图片/image-20220320150254339.png)
 
 ```java
 //集合对于泛型的支持
@@ -1146,7 +1146,7 @@ ArrayList<String> lists1=new ArrayList<>();//我偏向于这么写，为什么�
 
 
 
-![image-20220321091655211](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321091655211.png)
+![image-20220321091655211](JAVA笔记图片/image-20220321091655211.png)
 
 ***为什么上述最后一个API用Obeject[]接收返回值？**
 
@@ -1162,7 +1162,7 @@ ArrayList<String> lists1=new ArrayList<>();//我偏向于这么写，为什么�
 
 #### 1.迭代器 Iterator
 
-![image-20220321163349557](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321163349557.png)
+![image-20220321163349557](JAVA笔记图片/image-20220321163349557.png)
 
 ```Java
 ArrayList<String> lists=new ArrayList<>();
@@ -1200,7 +1200,7 @@ for(String ele : list) {
 
 
 
-![image-20220321170328083](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321170328083.png)
+![image-20220321170328083](JAVA笔记图片/image-20220321170328083.png)
 
 ```Java
 //Consumer是一个函数接口
@@ -1246,7 +1246,7 @@ lists.forEach(s -> {
 
 ### 存储自定义类型的对象
 
-![image-20220321171402573](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321171402573.png)
+![image-20220321171402573](JAVA笔记图片/image-20220321171402573.png)
 
 ### 集合的并发修改异常问题
 
@@ -1256,7 +1256,7 @@ lists.forEach(s -> {
 
 ### List系列集合
 
-![image-20220321172059775](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321172059775.png)
+![image-20220321172059775](JAVA笔记图片/image-20220321172059775.png)
 
 - 有序：存储和取出的元素顺序一致
 - 有索引：可以通过索引操作元素
@@ -1264,7 +1264,7 @@ lists.forEach(s -> {
 - **ArrayList**底层是基于**数组**实现的，根据查询元素快，增删相对慢。
 - **LinkedList**底层基于**双链表**实现的，查询元素慢，增删首尾元素是非常快的。
 
-![image-20220321171927394](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321171927394.png)
+![image-20220321171927394](JAVA笔记图片/image-20220321171927394.png)
 
 
 
@@ -1286,13 +1286,13 @@ list.add("a");
 
 - **底层数据结构是双链表**，查询慢，首尾操作的速度是极快的，所以多了很多首尾操作的特有API。
 
-![image-20220321173133857](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220321173133857.png)
+![image-20220321173133857](JAVA笔记图片/image-20220321173133857.png)
 
 
 
 ### set系列集合
 
-![image-20220322113436732](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220322113436732.png)
+![image-20220322113436732](JAVA笔记图片/image-20220322113436732.png)
 
 - HashSet : 无序、不重复、无索引。
 - LinkedHashSet：有序、不重复、无索引。
@@ -1311,7 +1311,7 @@ list.add("a");
 - 默认长度16，默认加载因为0.75，当数组存满到16*0.75=12时，就自动扩容，每次扩容原先的两倍
 - 当挂在元素下面的数据过多时，查询性能降低，从JDK8开始后，当链表长度超过8的时候，自动转换为红黑树。
 
-![image-20220322114021173](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220322114021173.png)
+![image-20220322114021173](JAVA笔记图片/image-20220322114021173.png)
 
 
 
@@ -1419,7 +1419,7 @@ Set<Apple> apples = new TreeSet<>(new Comparator<Apple>() {
 Set<Apple> apples = new TreeSet<>(( o1,  o2) ->  Double.compare(o2.getPrice() , o1.getPrice()) );//lambda表达式
 ```
 
-![image-20220322122423421](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220322122423421.png)
+![image-20220322122423421](JAVA笔记图片/image-20220322122423421.png)
 
 
 
@@ -1460,9 +1460,9 @@ public class MethodDemo {
 - java.utils.Collections:是集合工具类
 - 作用：Collections并不属于集合，是用来**操作集合的工具类**。
 
-![image-20220323105825402](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220323105825402.png)
+![image-20220323105825402](JAVA笔记图片/image-20220323105825402.png)
 
-![image-20220323110142582](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220323110142582.png)
+![image-20220323110142582](JAVA笔记图片/image-20220323110142582.png)
 
 
 
@@ -1476,7 +1476,7 @@ public class MethodDemo {
 - Collection集合的格式: [元素1,元素2,元素3..]
   Map集合的完整格式：{key1=value1 , key2=value2 , key3=value3 , ...}
 
-![image-20220323110608423](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220323110608423.png)
+![image-20220323110608423](JAVA笔记图片/image-20220323110608423.png)
 
 - HashMap:元素按照键是无序，不重复，无索引，值不做要求。（与Map体系一致）
 - LinkedHashMap:元素按照键是有序，不重复，无索引，值不做要求。
@@ -1484,7 +1484,7 @@ public class MethodDemo {
 
 
 
-![image-20220323110832228](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220323110832228.png)
+![image-20220323110832228](JAVA笔记图片/image-20220323110832228.png)
 
 
 
@@ -1494,7 +1494,7 @@ public class MethodDemo {
 
 **先获取Map集合全部的键，再根据遍历键找值。**
 
-![image-20220323111052362](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220323111052362.png)
+![image-20220323111052362](JAVA笔记图片/image-20220323111052362.png)
 
 ```java
 Map<String , Integer> maps = new HashMap<>();
@@ -1522,7 +1522,7 @@ for (String key : keys) {
 1. 先把Map集合转换成Set集合，Set集合中每个元素都是键值对实体类型了。
 2. 遍历Set集合，然后提取键以及提取值。
 
-![image-20220323111935636](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220323111935636.png)
+![image-20220323111935636](JAVA笔记图片/image-20220323111935636.png)
 
 ```Java
  // 1、把Map集合转换成Set集合
@@ -1549,7 +1549,7 @@ for (String key : keys) {
 
 JDK 1.8开始之后的新技术：Lambda表达式。
 
-![image-20220323113249727](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220323113249727.png)
+![image-20220323113249727](JAVA笔记图片/image-20220323113249727.png)
 
 ```Java
 //BiConsumer其实就是有两个参数的Consumer，是一个函数接口，其内部也只有一个action方法用于回调，主要用于forEach（）遍历；
@@ -1604,7 +1604,7 @@ public class MapDemo03 {
 - 这里的有序指的是保证存储和取出的元素顺序一致
 - 原理：底层数据结构是依然哈希表，只是每个键值对元素又额外的多了一个双链表的机制记录存储的顺序。同LinkHashSet
 
-![image-20220323192739190](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220323192739190.png)
+![image-20220323192739190](JAVA笔记图片/image-20220323192739190.png)
 
 ### TreeMap
 
@@ -1627,7 +1627,7 @@ public class MapDemo03 {
 - 不可变集合，就是**不可被修改**的集合。不可以添加、删除或者修改元素；
 - 集合的数据项在创建的时候提供，并且在整个生命周期中都不可改变。否则报错。
 
-![image-20220325145156374](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325145156374.png)
+![image-20220325145156374](JAVA笔记图片/image-20220325145156374.png)
 
 ```Java
  // 1、不可变的List集合
@@ -1659,7 +1659,7 @@ names.stream().filter(s -> s.startsWith("张")).filter(s -> s.length() == 3).for
 
 ## 获取Stream流
 
-![image-20220325145904181](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325145904181.png)
+![image-20220325145904181](JAVA笔记图片/image-20220325145904181.png)
 
 ```Java
   /** --------------------Collection集合获取流-------------------------------   */
@@ -1677,7 +1677,7 @@ names.stream().filter(s -> s.startsWith("张")).filter(s -> s.length() == 3).for
         Stream<Map.Entry<String,Integer>> keyAndValueStream =  maps.entrySet().stream();
 ```
 
-![image-20220325150609438](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325150609438.png)
+![image-20220325150609438](JAVA笔记图片/image-20220325150609438.png)
 
 ```Java
 /** ---------------------数组获取流------------------------------   */
@@ -1694,9 +1694,9 @@ names.stream().filter(s -> s.startsWith("张")).filter(s -> s.length() == 3).for
 - 在Stream流中无法直接修改集合、数组中的数据，因为**进入流中的数据是拷贝**。
 - 注意：终结操作方法，调用完成后流就无法继续使用了，原因是不会返回Stream了。
 
-![image-20220325155700228](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325155700228.png)
+![image-20220325155700228](JAVA笔记图片/image-20220325155700228.png)
 
-![image-20220325155717590](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325155717590.png)
+![image-20220325155717590](JAVA笔记图片/image-20220325155717590.png)
 
 ```Java
  // Stream<T> filter(Predicate<? super T> predicate)
@@ -1749,7 +1749,7 @@ names.stream().filter(s -> s.startsWith("张")).filter(s -> s.length() == 3).for
 - Stream流：方便操作集合/数组的**手段**。
 - 集合/数组：才是开发中的**目的**。
 
-![image-20220325160230155](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325160230155.png)
+![image-20220325160230155](JAVA笔记图片/image-20220325160230155-16521105726274.png)
 
 ```Java
 Stream<String> s1 = list.stream().filter(s -> s.startsWith("张"));
@@ -1781,11 +1781,11 @@ Stream<String> s1 = list.stream().filter(s -> s.startsWith("张"));
 - **异常一旦出现了，如果没有提前处理，程序就会退出JVM虚拟机而终止.**
 - 研究异常并且避免异常，然后提前处理异常，体现的是程序的**安全, 健壮性**。
 
-![image-20220325162816987](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325162816987.png)
+![image-20220325162816987](JAVA笔记图片/image-20220325162816987.png)
 
 
 
-![image-20220325162912571](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325162912571.png)
+![image-20220325162912571](JAVA笔记图片/image-20220325162912571.png)
 
 
 
@@ -1850,7 +1850,7 @@ System.out.println(d);
 - throws：用在方法上，可以将方法内部出现的异常抛出去给本方法的调用者处理。
 - 这种方式并不好，发生异常的方法自己不处理异常，如果异常最终抛出去给虚拟机将引起程序死亡。
 
-![image-20220325164049136](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325164049136.png)
+![image-20220325164049136](JAVA笔记图片/image-20220325164049136.png)
 
 ```Java
 public static void main(String[] args) throws Exception {
@@ -1875,7 +1875,7 @@ public static void parseTime(String date) throws Exception {
 - 这种方式还可以，发生异常的方法自己**独立完成异常的处理，程序可以继续往下执行**。
 - 注意：一个整体尽量放在一起try，因为如果前面出现异常，后面的代码再执行就没意义了。
 
-![image-20220325164404197](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220325164404197.png)
+![image-20220325164404197](JAVA笔记图片/image-20220325164404197.png)
 
 ```Java
 public static void main(String[] args) {
@@ -2061,7 +2061,7 @@ public class ExceptionDemo {
 
 代码就照着下图写就行了。
 
-![image-20220326135746632](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220326135746632.png)
+![image-20220326135746632](JAVA笔记图片/image-20220326135746632.png)
 
 
 
@@ -2072,11 +2072,11 @@ public class ExceptionDemo {
 
 
 
-![image-20220326134158064](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220326134158064.png)
+![image-20220326134158064](JAVA笔记图片/image-20220326134158064.png)
 
-![image-20220326134309276](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220326134309276.png)
+![image-20220326134309276](JAVA笔记图片/image-20220326134309276.png)
 
-![image-20220326134400588](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220326134400588.png)
+![image-20220326134400588](JAVA笔记图片/image-20220326134400588.png)
 
 
 
@@ -2094,17 +2094,17 @@ public class ExceptionDemo {
 - File类在包java.io.File下、代表操作系统的文件对象（文件、文件夹）。
 - File类提供了诸如：定位文件，获取文件本身的信息、删除文件、创建文件（文件夹）等功能。
 
-![image-20220401170824513](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401170824513.png)
+![image-20220401170824513](JAVA笔记图片/image-20220401170824513.png)
 
-![image-20220401170858362](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401170858362.png)
+![image-20220401170858362](JAVA笔记图片/image-20220401170858362.png)
 
 
 
-![image-20220401171029903](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401171029903.png)
+![image-20220401171029903](JAVA笔记图片/image-20220401171029903.png)
 
-![image-20220401171125788](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401171125788.png)
+![image-20220401171125788](JAVA笔记图片/image-20220401171125788-16521106179535.png)
 
-![image-20220401171252101](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401171252101.png)
+![image-20220401171252101](JAVA笔记图片/image-20220401171252101.png)
 
 
 
@@ -2116,15 +2116,15 @@ public class ExceptionDemo {
 
 ### 常见字符集
 
-![image-20220401171623086](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401171623086.png)
+![image-20220401171623086](JAVA笔记图片/image-20220401171623086.png)
 
-![image-20220401172150360](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401172150360.png)
+![image-20220401172150360](JAVA笔记图片/image-20220401172150360.png)
 
 
 
 ### 字符集的编码、解码操作
 
-![image-20220401172709763](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401172709763.png)
+![image-20220401172709763](JAVA笔记图片/image-20220401172709763.png)
 
 ```Java
 // 1、编码：把文字转换成字节（使用指定的编码）
@@ -2154,7 +2154,7 @@ System.out.println(rs);
 - 字符输入流：以内存为基准，来自磁盘文件/网络中的数据**以字符**的形式读入到内存中去的流称为字符输入流。
 - 字符输出流：以内存为基准，把内存中的数据**以字符**写出到磁盘文件或者网络介质中去的流称为字符输出流。
 
-![image-20220401173027920](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401173027920.png)
+![image-20220401173027920](JAVA笔记图片/image-20220401173027920.png)
 
 
 
@@ -2162,7 +2162,7 @@ System.out.println(rs);
 
 #### 文件字节输入流
 
-![image-20220401173329114](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401173329114.png)
+![image-20220401173329114](JAVA笔记图片/image-20220401173329114.png)
 
 ```Java
 InputStream is = new FileInputStream("file-io-app\\src\\data.txt");//相对路径
@@ -2185,7 +2185,7 @@ byte[] buffer = new byte[3];//一次读取3个字节
 
 **一次读完全部字节，从而使中文不乱码，且读取效率提高**，但文件太大时可能会导致内存溢出
 
-![image-20220401174524088](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401174524088.png)
+![image-20220401174524088](JAVA笔记图片/image-20220401174524088.png)
 
 ```Java
 		 // 1、创建一个文件字节输入流管道与源文件接通
@@ -2210,9 +2210,9 @@ byte[] buffer = new byte[3];//一次读取3个字节
 
 作用：以内存为基准，把内存中的数据以字节的形式写出到磁盘文件中去的流。
 
-![image-20220401175524926](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401175524926.png)
+![image-20220401175524926](JAVA笔记图片/image-20220401175524926.png)
 
-![image-20220401175557897](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401175557897.png)
+![image-20220401175557897](JAVA笔记图片/image-20220401175557897.png)
 
 ```Java
   // 1、创建一个文件字节输出流管道与目标文件接通
@@ -2283,13 +2283,13 @@ try {
 
 #### try-catch-finally
 
-![image-20220401195356593](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401195356593.png)
+![image-20220401195356593](JAVA笔记图片/image-20220401195356593.png)
 
 #### try-with-resource
 
 finally虽然可以用于释放资源，但是释放资源的代码过于繁琐
 
-![image-20220401195539817](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401195539817.png)
+![image-20220401195539817](JAVA笔记图片/image-20220401195539817.png)
 
 **JDK 7 以及 JDK 9的()中只能放置资源对象，否则报错**
 **什么是资源呢？**
@@ -2341,7 +2341,7 @@ class MyConnection implements AutoCloseable{
 
 #### 文件字符输入流
 
-![image-20220401202259863](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401202259863.png)
+![image-20220401202259863](JAVA笔记图片/image-20220401202259863.png)
 
 ```Java
 Reader fr = new FileReader("file-io-app\\src\\data06.txt");
@@ -2362,9 +2362,9 @@ while ((code = fr.read()) != -1){
 
 #### 文件字符输出流
 
-![image-20220401202412234](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401202412234.png)
+![image-20220401202412234](JAVA笔记图片/image-20220401202412234.png)
 
-![image-20220401202448931](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220401202448931.png)
+![image-20220401202448931](JAVA笔记图片/image-20220401202448931.png)
 
 ```Java
  // 1、创建一个字符输出流管道与目标文件接通
@@ -2409,9 +2409,9 @@ while ((code = fr.read()) != -1){
   字符缓冲输入流：BufferedReader
   字符缓冲输出流：BufferedWriter
 
-![image-20220402153745087](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402153745087.png)
+![image-20220402153745087](JAVA笔记图片/image-20220402153745087.png)
 
-![image-20220402211223667](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402211223667.png)
+![image-20220402211223667](JAVA笔记图片/image-20220402211223667.png)
 
 ### 字节缓冲流
 
@@ -2419,7 +2419,7 @@ while ((code = fr.read()) != -1){
 - 字节缓冲输出流自带了8KB缓冲池，数据就直接写入到缓冲池中去，写数据性能极高了。
 - 使用方法就是将原始流包装成缓冲流，功能以及方法调用上并没有变化
 
-![image-20220402154652779](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402154652779.png)
+![image-20220402154652779](JAVA笔记图片/image-20220402154652779.png)
 
 ```Java
 try (
@@ -2452,7 +2452,7 @@ try (
 
 ### 字符缓冲流
 
-![image-20220402155017620](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402155017620.png)
+![image-20220402155017620](JAVA笔记图片/image-20220402155017620.png)
 
 ```Java
   try (
@@ -2479,7 +2479,7 @@ try (
         }
 ```
 
-![image-20220402155155504](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402155155504.png)
+![image-20220402155155504](JAVA笔记图片/image-20220402155155504.png)
 
 ```Java
   // 1、创建一个字符输出流管道与目标文件接通
@@ -2521,9 +2521,9 @@ try (
 - 如果代码编码和文件编码不一致，使用字符流**直接读取会乱码**。
 - 使用字符输入转换流，可以提取文件（GBK）的**原始字节流**，原始字节不会存在问题。然后把字节流以指定编码转换成字符输入流，这样字符输入流中的字符就不乱码了
 
-![image-20220402204703832](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402204703832.png)
+![image-20220402204703832](JAVA笔记图片/image-20220402204703832.png)
 
-![image-20220402205110967](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402205110967.png)
+![image-20220402205110967](JAVA笔记图片/image-20220402205110967.png)
 
 ```Java
 // 代码UTF-8   文件 GBK  "D:\\resources\\data.txt"
@@ -2540,7 +2540,7 @@ while ((line = br.readLine()) != null){
 }
 ```
 
-![image-20220402205519411](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402205519411.png)
+![image-20220402205519411](JAVA笔记图片/image-20220402205519411.png)
 
 ```Java
 // 1、定义一个字节输出流
@@ -2568,9 +2568,9 @@ bw.close();
 - 使用到的流是对象字节输出流：ObjectOutputStream
 - 序列化对象的要求：对象必须实现序列化接口
 
-![image-20220402210833012](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402210833012.png)
+![image-20220402210833012](JAVA笔记图片/image-20220402210833012.png)
 
-![image-20220402211005921](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402211005921.png)
+![image-20220402211005921](JAVA笔记图片/image-20220402211005921.png)
 
 ```Java
 // 1、创建学生对象
@@ -2611,7 +2611,7 @@ public class Student implements Serializable {
 - 使用到的流是对象字节输入流：ObjectInputStream
 - 作用：以内存为基准，把存储到磁盘文件中去的对象数据恢复成内存中的对象，称为对象反序列化。
 
-![image-20220402211822154](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402211822154.png)
+![image-20220402211822154](JAVA笔记图片/image-20220402211822154.png)
 
 ```Java
 // 1、创建对象字节输入流管道包装低级的字节输入流管道
@@ -2634,11 +2634,11 @@ System.out.println(s);
   PrintStream继承自字节输出流OutputStream，支持写**字节数据**的方法。
   PrintWriter继承自字符输出流Writer，支持写**字符数据**出去。
 
-![image-20220402211956095](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402211956095.png)
+![image-20220402211956095](JAVA笔记图片/image-20220402211956095.png)
 
-![image-20220402212106315](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402212106315.png)
+![image-20220402212106315](JAVA笔记图片/image-20220402212106315.png)
 
-![image-20220402212355285](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402212355285.png)
+![image-20220402212355285](JAVA笔记图片/image-20220402212355285.png)
 
 ```Java
  // 1、创建一个打印流对象
@@ -2684,9 +2684,9 @@ System.out.println("望帝春心托杜鹃");
 
   属性文件：后缀是.properties结尾的文件,里面的内容都是 key=value，后续做系统配置信息的。
 
-![image-20220402213041452](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402213041452.png)
+![image-20220402213041452](JAVA笔记图片/image-20220402213041452.png)
 
-![image-20220402213208305](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402213208305.png)
+![image-20220402213208305](JAVA笔记图片/image-20220402213208305.png)
 
 ```Java
 // 需求：使用Properties把键值对信息存入到属性文件中去。
@@ -2724,9 +2724,9 @@ properties.store(new FileWriter("io-app2/src/users.properties"), "乱写");
 - commons-io工具包提供了很多有关io操作的类。有两个主要的类FileUtils, IOUtils
 - 利用common-io几乎可以完成所有的io流操作，非常牛
 
-![image-20220402213831175](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402213831175.png)
+![image-20220402213831175](JAVA笔记图片/image-20220402213831175.png)
 
-![image-20220402213855733](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220402213855733.png)
+![image-20220402213855733](JAVA笔记图片/image-20220402213855733.png)
 
 
 
@@ -2741,14 +2741,14 @@ properties.store(new FileWriter("io-app2/src/users.properties"), "乱写");
 
 ## 多线程的创建
 
-![image-20220403210111407](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220403210111407.png)
+![image-20220403210111407](JAVA笔记图片/image-20220403210111407.png)
 
 ### 1.继承Thread类
 
 - Java是通过java.lang.Thread 类来代表线程的。 
 - 按照面向对象的思想，Thread类应该提供了实现多线程的方式。
 
-![image-20220403202733276](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220403202733276.png)
+![image-20220403202733276](JAVA笔记图片/image-20220403202733276.png)
 
 ```Java
 public static void main(String[] args) {
@@ -2790,9 +2790,9 @@ class MyThread extends Thread{
 
 ### 2.实现Runnable接口
 
-![image-20220403203408649](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220403203408649.png)
+![image-20220403203408649](JAVA笔记图片/image-20220403203408649.png)
 
-![image-20220403203501478](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220403203501478.png)
+![image-20220403203501478](JAVA笔记图片/image-20220403203501478.png)
 
 ```Java
  public static void main(String[] args) {
@@ -2845,9 +2845,9 @@ class MyRunnable  implements Runnable {
 - JDK 5.0提供了Callable和FutureTask来实现。
 - 这种方式的优点是：可以得到线程执行的结果。
 
-![image-20220403205120925](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220403205120925.png)
+![image-20220403205120925](JAVA笔记图片/image-20220403205120925.png)
 
-![image-20220403205435284](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220403205435284.png)
+![image-20220403205435284](JAVA笔记图片/image-20220403205435284.png)
 
 ```Java
  // 3、创建Callable任务对象
@@ -2910,9 +2910,9 @@ class MyCallable implements Callable<String>{
 
 ## Thread常用API
 
-![image-20220404160715849](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404160715849.png)
+![image-20220404160715849](JAVA笔记图片/image-20220404160715849.png)
 
-![image-20220404161034391](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404161034391.png)
+![image-20220404161034391](JAVA笔记图片/image-20220404161034391.png)
 
 
 
@@ -2921,7 +2921,7 @@ class MyCallable implements Callable<String>{
 - 多个线程同时操作同一个共享资源的时候可能会出现业务安全问题，称为线程安全问题。
 - 线程安全问题出现的原因：存在多线程并发、同时访问共享资源、存在修改共享资源
 
-![image-20220404161337111](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404161337111.png)
+![image-20220404161337111](JAVA笔记图片/image-20220404161337111.png)
 
 
 
@@ -3026,7 +3026,7 @@ public synchronized void drawMoney(double money) {
 - 为了更清晰的表达如何加锁和释放锁，JDK5以后提供了一个新的锁对象Lock，**更加灵活、方便**。
 - Lock实现提供比使用synchronized方法和语句可以获得更广泛的锁定操作。
 - **Lock是接口**不能直接实例化，这里采用它的实现类ReentrantLock来构建Lock锁对象。
-- ![image-20220404164013842](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404164013842.png)
+- ![image-20220404164013842](JAVA笔记图片/image-20220404164013842.png)
 
 ```Java
 // final修饰后：锁对象是唯一和不可替换的，非常专业
@@ -3062,9 +3062,9 @@ private final Lock lock = new ReentrantLock();
 
 ## 线程通信
 
-![image-20220404164354053](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404164354053.png)
+![image-20220404164354053](JAVA笔记图片/image-20220404164354053.png)
 
-![image-20220404164431687](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404164431687.png)
+![image-20220404164431687](JAVA笔记图片/image-20220404164431687.png)
 
 ```Java
 // 小红 小明
@@ -3118,17 +3118,17 @@ public synchronized void saveMoney(double money) {
 - 线程池就是一个可以复用线程的技术。
 - **不使用线程池的问题**：如果用户每发起一个请求，后台就创建一个新线程来处理，下次新任务来了又要创建新线程，而创建新线程的开销是很大的，这样会严重影响系统的性能。
 
-<img src="C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404165251822.png" alt="image-20220404165251822" style="zoom:50%;" />
+<img src="JAVA笔记图片/image-20220404165251822-16521109849066.png" alt="image-20220404165251822" style="zoom:50%;" />
 
 
 
 ### 手动创建线程池
 
-![image-20220404165739007](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404165739007.png)
+![image-20220404165739007](JAVA笔记图片/image-20220404165739007.png)
 
-![image-20220404165547876](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404165547876.png)
+![image-20220404165547876](JAVA笔记图片/image-20220404165547876.png)
 
-![image-20220404173510809](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404173510809.png)
+![image-20220404173510809](JAVA笔记图片/image-20220404173510809.png)
 
 - **1.谁代表线程池？**
 
@@ -3152,7 +3152,7 @@ ExecutorService pools = new ThreadPoolExecutor(3, 5, 8 , TimeUnit.SECONDS, new A
 Executors.defaultThreadFactory() , new ThreadPoolExecutor.AbortPolicy());
 ```
 
-![image-20220404170643403](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404170643403.png)
+![image-20220404170643403](JAVA笔记图片/image-20220404170643403.png)
 
 ```Java
   // 1、创建线程池对象
@@ -3188,7 +3188,7 @@ Executors.defaultThreadFactory() , new ThreadPoolExecutor.AbortPolicy());
 
 ### 线程池处理Callable任务
 
-![image-20220404173613303](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404173613303.png)
+![image-20220404173613303](JAVA笔记图片/image-20220404173613303.png)
 
 ```Java
   // 1、创建线程池对象
@@ -3218,7 +3218,7 @@ Executors.defaultThreadFactory() , new ThreadPoolExecutor.AbortPolicy());
 
 ### Executors工具类实现线程池
 
-![image-20220404173916185](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220404173916185.png)
+![image-20220404173916185](JAVA笔记图片/image-20220404173916185.png)
 
 ```Java
   // 1、创建固定线程数据的线程池
@@ -3240,7 +3240,7 @@ Executors.defaultThreadFactory() , new ThreadPoolExecutor.AbortPolicy());
 - 定时器是一种控制任务延时调用，或者周期调用的技术。
 - 作用：闹钟、定时邮件发送。
 
-![image-20220409150327237](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409150327237.png)
+![image-20220409150327237](JAVA笔记图片/image-20220409150327237.png)
 
 ```JAVA
   // 1、创建Timer定时器
@@ -3275,7 +3275,7 @@ Executors.defaultThreadFactory() , new ThreadPoolExecutor.AbortPolicy());
     }
 ```
 
-![image-20220409150406539](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409150406539.png)
+![image-20220409150406539](JAVA笔记图片/image-20220409150406539.png)
 
 ```java
  // 1、创建ScheduledExecutorService线程池，做定时器
@@ -3322,11 +3322,11 @@ Executors.defaultThreadFactory() , new ThreadPoolExecutor.AbortPolicy());
 
 常见的通信模式有如下2种形式：Client-Server(CS) 、 Browser/Server(BS) 
 
-<img src="C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409151341406.png" alt="image-20220409151341406" style="zoom:50%;" />
+<img src="JAVA笔记图片/image-20220409151341406.png" alt="image-20220409151341406" style="zoom:50%;" />
 
 
 
-<img src="C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409151416652.png" alt="image-20220409151416652" style="zoom:50%;" />
+<img src="JAVA笔记图片/image-20220409151416652.png" alt="image-20220409151416652" style="zoom:50%;" />
 
 ## 实现网络编程关键的三要素
 
@@ -3345,17 +3345,17 @@ ping IP地址：检查网络是否连通
 本机IP: 127.0.0.1或者localhost：称为回送地址也可称本地回环地址，只会寻找当前所在本机。
 ```
 
-![image-20220409151939589](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409151939589.png)
+![image-20220409151939589](JAVA笔记图片/image-20220409151939589.png)
 
 ### 端口号
 
-![image-20220409152424906](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409152424906.png)
+![image-20220409152424906](JAVA笔记图片/image-20220409152424906.png)
 
 
 
 ### 通信协议
 
-![image-20220409152532640](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409152532640.png)
+![image-20220409152532640](JAVA笔记图片/image-20220409152532640.png)
 
 
 
@@ -3364,11 +3364,11 @@ ping IP地址：检查网络是否连通
 - UDP是一种无连接、不可靠传输的协议。
 - 将数据源IP、目的地IP和端口以及数据封装成数据包，大小限制在64KB内，直接发送出去即可。
 
-![image-20220409153016533](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409153016533.png)
+![image-20220409153016533](JAVA笔记图片/image-20220409153016533.png)
 
-![image-20220409153041064](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409153041064.png)
+![image-20220409153041064](JAVA笔记图片/image-20220409153041064.png)
 
-![image-20220409153110734](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409153110734.png)
+![image-20220409153110734](JAVA笔记图片/image-20220409153110734.png)
 
 ```Java
 // 1、创建发送端对象：发送端自带默认的端口号（人）
@@ -3395,7 +3395,7 @@ socket.close();
 //需要发送数据的时候，DatagramSocket指定自己的端口号，DatagramPacket指定对方的端口号。需要接收数据的时候，必须指定和上面发送端的DatagramPacket一致的端口号，而用来接收数据的DatagramPacket不需要指定端口号。
 ```
 
-![image-20220409153203592](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409153203592.png)
+![image-20220409153203592](JAVA笔记图片/image-20220409153203592.png)
 
 ```Java
 // 1、创建接收端对象：注册端口（人）
@@ -3426,9 +3426,9 @@ socket.close();
 
 
 
-![image-20220409153905152](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409153905152.png)
+![image-20220409153905152](JAVA笔记图片/image-20220409153905152.png)
 
-![image-20220409153919560](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409153919560.png)
+![image-20220409153919560](JAVA笔记图片/image-20220409153919560.png)
 
 具体方法去看代码，我是觉得这一段讲的很培训班，没兴趣学
 
@@ -3440,9 +3440,9 @@ socket.close();
 - 客户端如果没有消息，服务端会进入阻塞等待。
 - Socket一方关闭或者出现异常、对方Socket也会失效或者出错。
 
-![image-20220409154110623](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409154110623.png)
+![image-20220409154110623](JAVA笔记图片/image-20220409154110623.png)
 
-![image-20220409154439816](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409154439816.png)
+![image-20220409154439816](JAVA笔记图片/image-20220409154439816.png)
 
 **客户端实现步骤：**
 
@@ -3478,7 +3478,7 @@ try {
 }
 ```
 
-![image-20220409194902194](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409194902194.png)**服务端实现步骤：**
+![image-20220409194902194](JAVA笔记图片/image-20220409194902194.png)**服务端实现步骤：**
 
 1. 创建ServerSocket对象，注册服务端端口。
 2. 调用ServerSocket对象的accept()方法，等待客户端的连接，并得到Socket管道对象。
@@ -3508,7 +3508,7 @@ try {
 
 以下内容看ppt和代码，我觉得我暂时用不上
 
-![image-20220409195358775](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220409195358775.png)
+![image-20220409195358775](JAVA笔记图片/image-20220409195358775.png)
 
 
 
@@ -3533,7 +3533,7 @@ try {
 
 - 测试某个方法直接右键该方法启动测试。测试全部方法，可以选择类或者模块启动。
 
-![image-20220410160814528](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410160814528.png)
+![image-20220410160814528](JAVA笔记图片/image-20220410160814528.png)
 
 ```Java
 /**
@@ -3558,7 +3558,7 @@ public void testSelectNames(){
 } //直接进行测试，看代码能不能正常运行
 ```
 
-![image-20220410162129040](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410162129040.png)
+![image-20220410162129040](JAVA笔记图片/image-20220410162129040.png)
 
 
 
@@ -3586,7 +3586,7 @@ Class c = HelloWorld.class;
 
 Class是一个特殊的类，和定义类时写的修饰符class不同
 
-![image-20220410164159715](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410164159715.png)
+![image-20220410164159715](JAVA笔记图片/image-20220410164159715.png)
 
 ```Java
 //三种方法
@@ -3610,7 +3610,7 @@ System.out.println(c2);
 
 第一步：获得class对象	第二步：获得Constructor对象	第三步：创建对象
 
-![image-20220410164451882](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410164451882.png)
+![image-20220410164451882](JAVA笔记图片/image-20220410164451882.png)
 
 ```Java
 public class Student {
@@ -3686,7 +3686,7 @@ public class TestStudent01 {
 }
 ```
 
-![image-20220410165840069](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410165840069.png)
+![image-20220410165840069](JAVA笔记图片/image-20220410165840069.png)
 
 ```Java
 // 1.调用构造器得到一个类的对象返回。
@@ -3719,7 +3719,7 @@ public void getDeclaredConstructor() throws Exception {
 
 ### 获取成员变量对象
 
-![image-20220410171025127](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410171025127.png)
+![image-20220410171025127](JAVA笔记图片/image-20220410171025127.png)
 
 ```Java
 /**
@@ -3752,7 +3752,7 @@ public void getDeclaredField() throws Exception {
 }
 ```
 
-![image-20220410171239502](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410171239502.png)
+![image-20220410171239502](JAVA笔记图片/image-20220410171239502.png)
 
 ```Java
 @Test
@@ -3779,7 +3779,7 @@ public void setField() throws Exception {
 
 ### 获取方法对象
 
-![image-20220410171620746](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410171620746.png)![image-20220410172344239](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410172344239.png)
+![image-20220410171620746](JAVA笔记图片/image-20220410171620746.png)![image-20220410172344239](JAVA笔记图片/image-20220410172344239.png)
 
 ```Java
 public class Dog {
@@ -3850,13 +3850,13 @@ public void getDeclardMethod() throws Exception {
 
 #### 绕过编译阶段为集合添加数据
 
-![image-20220410172510233](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410172510233.png)
+![image-20220410172510233](JAVA笔记图片/image-20220410172510233.png)
 
 
 
 #### 通用框架的底层原理
 
-![image-20220410172801995](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410172801995.png)
+![image-20220410172801995](JAVA笔记图片/image-20220410172801995.png)
 
 
 
@@ -3867,7 +3867,7 @@ public void getDeclardMethod() throws Exception {
 - 作用：对Java中类、方法、成员变量做标记，然后进行特殊处理，至于到底做何种处理由业务需求来决定。
   例如：JUnit框架中，标记了注解@Test的方法就可以被当成测试方法执行，而没有标记的就不能当成测试方法执行。
 
-![image-20220410173045898](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410173045898.png)
+![image-20220410173045898](JAVA笔记图片/image-20220410173045898.png)
 
 
 
@@ -3903,7 +3903,7 @@ public @interface MyBook {
    @Target: 约束自定义注解只能在哪些地方使用
    @Retention：申明注解的生命周期
 
-![image-20220410174120630](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410174120630.png)
+![image-20220410174120630](JAVA笔记图片/image-20220410174120630.png)
 
 ```Java
 @Target({ElementType.TYPE,ElementType.METHOD})
@@ -3921,7 +3921,7 @@ public @interface Bookk {
 
 注解的操作中经常需要进行解析，注解的解析就是判断是否存在注解，存在注解就解析出内容。
 
-![image-20220410174506332](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410174506332.png)
+![image-20220410174506332](JAVA笔记图片/image-20220410174506332.png)
 
 **解析注解的技巧：**
 
@@ -3983,7 +3983,7 @@ class BookStore{
   1.必须有接口，实现类要实现接口（代理通常是基于接口实现的）。
   2.创建一个实现类的对象，该对象为业务对象，紧接着为业务对象做一个代理对象。
 
-![image-20220410192209612](C:\Users\xad Talent\AppData\Roaming\Typora\typora-user-images\image-20220410192209612.png)
+![image-20220410192209612](JAVA笔记图片/image-20220410192209612.png)
 
 ```Java
 //接口
